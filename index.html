@@ -1,3 +1,34 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@wsyzxlr 
+wsyzxlr
+/
+wsyzxlr.github.io
+Public
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Create index.html
+ master
+@wsyzxlr
+wsyzxlr committed 4 minutes ago 
+0 parents commit 3b2d18bdeabaeed06fbcb31881c09bf31f849cb6
+Showing  with 346 additions and 0 deletions.
+ 346  index.html 
+@@ -0,0 +1,346 @@
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,7 +64,7 @@
 		<div class="loader-section section-left"></div>
 		<div class="loader-section section-right"></div>
 	</div>
-	
+
 	<!-- Page Content -->
 	<div class="container-fluid tm-main">
 		<div class="row tm-main-row">
@@ -75,7 +106,7 @@
 					<section id="tm-section-1" class="tm-section">
 						<div class="ml-auto">
 							<header class="mb-4"><h1 class="tm-text-shadow">欢迎来到我的网站</h1></header>
-							
+
 							<a href="#" class="btn tm-btn tm-font-big" data-nav-link="#tmNavLink2">继续</a> 
 							<!-- data-nav-link holds the ID of nav item, which means this link should behave the same as that nav item  -->
 						</div>
@@ -88,7 +119,7 @@
 							<div class="tm-img-container">
 								<div class="tm-img-slider">
 									<a href="img/00.png" class="00.png"><img src="img/00.png" alt="Image" class="img-fluid"></a>
-									
+
 								</div>
 							</div>		            		          
 						</div>       		          	
@@ -109,7 +140,7 @@
 								</div>
 							</div>
 						</div>
-				
+
 					<!-- section 4 -->
 					<section id="tm-section-4" class="tm-section">
 						<div class="tm-bg-transparent-black tm-contact-box-pad">
@@ -151,7 +182,7 @@
 					</section>					
 				</div>	<!-- .tm-content -->							
 				<footer class="footer-link">
-					
+
 				</footer>
 			</div>	<!-- row -->			
 		</div>
@@ -226,10 +257,10 @@
   			// Add Event Listener to each Nav item
 	     	$(".tm-main-nav a").click(function(e){
 	     		e.preventDefault();
-		    	
+
 		    	var currentNavItem = $(this);
 		    	changePage(currentNavItem);
-		    	
+
 		    	setupCarousel();
 		    	setupFooter();
 
@@ -265,7 +296,7 @@
   		// If there is enough room, stick the footer at the bottom of page content.
   		// If not, place it after the page content
   		function setupFooter() {
-  			
+
   			var padding = 100;
   			var footerPadding = 40;
   			var mainContent = $("section"+currentPageID);
@@ -300,15 +331,15 @@
 		      	// The link contains data-nav-link attribute, which holds the nav item ID
 		      	// Nav item ID is then used to access and trigger click on the corresponding nav item
 		      	var linkToAnotherPage = $("a.tm-btn[data-nav-link]");
-			    
+
 			    if(linkToAnotherPage != null) {
-			    	
+
 			    	linkToAnotherPage.on("click", function(){
 			    		var navItemToHighlight = linkToAnotherPage.data("navLink");
 			    		$("a" + navItemToHighlight).click();
 			    	});
 			    }
-		      	
+
 		      	// Hide all pages
 		      	allPages.hide();
 
@@ -316,7 +347,7 @@
 
 		     	// Set up background first page
 		     	var bgImg = $("#tmNavLink1").data("bgImg");
-		     	
+
 		     	$.backstretch("img/" + bgImg, {fade: 500});
 
 		     	// Setup Carousel, Nav, and Nav Toggle
@@ -344,3 +375,24 @@
 </body>
 </html>
 
+0 comments on commit 3b2d18b
+@wsyzxlr
+ 
+ 
+Leave a comment
+
+Attach files by dragging & dropping, selecting or pasting them.
+ You’re receiving notifications because you’re watching this repository.
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
