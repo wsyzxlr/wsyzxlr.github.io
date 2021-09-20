@@ -12,23 +12,28 @@ window.onload = function init(){
 
 	// Three Vertices
 	var vertices = [
-		-1.0, -1.0, 
+		/*-1.0, -1.0, 
 		 0.0,  1.0, 
-		 1.0, -1.0, 
-		 /*0.0, -1.0,
-		 1.0, -1.0,
-		 1.0,  1.0,
-		 0.0, -1.0,
-		 1.0,  1.0,
-		 0.0,  1.0*/
-		 /*-0.5, -0.5,
-		 0.0, 0.5,
-		 0.5, -0.5*/
+		 1.0, -1.0, */
+
+		 -1,0,
+		 -1,1,
+		  0,1,
+		  0,1,
+		  0,0,
+		 -1,0,
+		  
+		  1,0,
+		  1,-1,
+		  0,-1, 
+		  
+		  
 	];
+	
 
 	// Configure WebGL
 	gl.viewport( 0, 0, canvas.width, canvas.height );
-	gl.clearColor( 1.0, 1.0, 1.0, 1.0 );
+	gl.clearColor( 9.0, 1.0, 1.0, 1.0 );
 
 	// Load shaders and initialize attribute buffers
 	var program = initShaders( gl, "vertex-shader", "fragment-shader" );
@@ -49,7 +54,7 @@ window.onload = function init(){
 
 function render(){
 	gl.clear( gl.COLOR_BUFFER_BIT );
-	//gl.drawArrays( gl.TRIANGLE_FAN, 0, 4 );
-	gl.drawArrays( gl.TRIANGLES, 0, 3 );
+	gl.drawArrays( gl.TRIANGLES, 0, 9 );
+	//gl.drawArrays( gl.TRIANGLES, 0, 3 );
 	//gl.drawArrays( gl.TRIANGLE_FANS, 3, 6 );
 }
