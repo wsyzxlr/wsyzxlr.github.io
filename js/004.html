@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./ch01/cuon-utils.js"></script>
+    <script src="./ch01/webgl-debug.js"></script>
+    <script src="./ch01/webgl-utils.js"></script>
+    <script src="./ch01/gl-matrix-min.js"></script>
+    <script src="./ch01/cuon-matrix.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!--    <script src="triangle.js"></script>-->
+    <script src="004.js"></script>
+</head>
+<body onload="main()">
+<div style="text-align: center;" >
+    <canvas id="gl" width="400" height="400"></canvas><br>
+    <button id = "X" onclick="XX()" class="btn btn-default">沿X轴旋转</button>
+	<br>
+    <button id = "Y" onclick="YY()" class="btn btn-default">沿Y轴旋转</button>
+	<br>
+    <button id = "Z" onclick="ZZ()" class="btn btn-default">沿Z轴旋转</button>
+    <br>
+    <button onclick="XL()" class="btn btn-default">X左移</button>
+    <button onclick="XR()" class="btn btn-default">X右移</button>
+    <br>
+    <button onclick="YO()" class="btn btn-default">Y上移</button>
+    <button onclick="YD()" class="btn btn-default">Y下移</button>
+    <br>
+    <button onclick="ZG()" class="btn btn-default">Z前移</button>
+    <button onclick="ZB()" class="btn btn-default">Z后移</button>
+    <br>
+    <button onclick="XB()" class="btn btn-default">X拉长</button>
+    <button onclick="XS()" class="btn btn-default">X缩短</button>
+    <br>
+    <button onclick="YB()" class="btn btn-default">Y拉长</button>
+    <button onclick="YS()" class="btn btn-default">Y缩短</button>
+    <br>
+    <button onclick="ZB()" class="btn btn-default">Z拉长</button>
+    <button onclick="ZS()" class="btn btn-default">Z缩短</button>
+    <br>
+    <button id = "start" onclick="start()">开始</button>
+    <button id = "stop" onclick="stop()">停止</button>
+</div>
+</body>
+</html>
